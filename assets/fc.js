@@ -18,7 +18,7 @@ function Usuario(nombre, apellido, libros, mascotas){
         this.libros.push(libro)
     }
     this.getBooks = function(){
-        return this.libros
+        return this.libros.map(element => element.nombre);
     }
 }
 

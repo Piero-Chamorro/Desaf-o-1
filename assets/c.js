@@ -22,7 +22,7 @@ class Usuario{
         this.libros.push(libro);
     }
     getBooks(){
-        return this.libros;
+        return this.libros.map(element => element.nombre);
     }
 }
 
